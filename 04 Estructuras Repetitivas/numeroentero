@@ -1,0 +1,10 @@
+numero = input("Ingresá un número entero: ")
+
+# Elimina el signo negativo si existe
+numero_sin_signo = numero.lstrip('-')
+
+# Calcula la cantidad de dígitos
+cantidad_digitos = len(numero_sin_signo)
+
+# Muestra el resultado
+print(f"El número tiene {cantidad_digitos} dígito(s).")

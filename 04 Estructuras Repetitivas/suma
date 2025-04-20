@@ -1,0 +1,17 @@
+#Escribe un programa que sume todos los números enteros comprendidos entre dos valores
+#dados por el usuario, excluyendo esos dos valores.
+# Solicita los dos valores al usuario
+inicio = int(input("Ingresá el primer número entero: "))
+fin = int(input("Ingresá el segundo número entero: "))
+
+# Determina el menor y el mayor para asegurar el orden
+menor = min(inicio, fin)
+mayor = max(inicio, fin)
+
+# Suma los números entre los dos valores (excluyendo ambos)
+suma = 0
+for i in range(menor + 1, mayor):
+    suma += i
+
+# Muestra el resultado
+print(f"La suma de los números entre {inicio} y {fin}, excluyéndolos, es: {suma}")
